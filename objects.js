@@ -15,18 +15,26 @@ console.log(y);
 console.log(z);
 
 
-var pizza = function(){
-    this.crust = 'thin';
-    this.toppings = 5;
-    this.hasBacon = false;
-};
-var pizzaA = new pizza();
-var pizzaB = new pizza();
+// var pizza = function(){
+//     this.crust = 'thin';
+//     this.toppings = 5;
+//     this.hasBacon = false;
+// };
+// var pizzaA = new pizza();
+// var pizzaB = new pizza();
 
-pizzaA.crust = "thick";
+// pizzaA.crust = "thick";
 
-console.log(pizzaA.crust);
-console.log(pizzaB.crust);
+// console.log(pizzaA.crust);
+// console.log(pizzaB.crust);
 
-console.log(pizzaA instanceof pizza);
-console.log(pizzaA.constructor);
+// console.log(pizzaA instanceof pizza);
+// console.log(pizzaA.constructor);
+
+var bike = function(){
+    this.tyres = 2,
+    this.toppings = "onion"
+    this.hasTyres = true;
+}
+var bikeA = new bike();
+console.log(bikeA.tyres);
