@@ -32,9 +32,23 @@ console.log(z);
 // console.log(pizzaA.constructor);
 
 var bike = function(){
-    this.tyres = 2,
-    this.toppings = "onion"
+    this.tyres = 2;
+    var toppings = "onion";
     this.hasTyres = true;
+    this.isValueforMoney = function(){
+        return this.hasTyres;
+    }
+    this.getTyres = function(){
+        return this.tyres;
+    }
+    var getToppings = function(){
+        return toppings;
+    }
+
+    var tmp = {};
+    tmp.getToppings = getToppings;
+
+    return tmp;
 }
 var bikeA = new bike();
-console.log(bikeA.tyres);
+console.log(bikeA.getToppings());
