@@ -11,9 +11,9 @@ var z = x.concat(y,a);
 console.log(z);
 
 //copyWithin()
-var cars = ['city', 'swift', 'i20', 'seltos', 'ciaz'];
+var cars = ['city', 'swift', 'i20', 'seltos', 'ciaz','x','y','z'];
 function func1(){
-    return cars.copyWithin(3,1);
+    return cars.copyWithin(5,3);
 }
 console.log(func1());
 
@@ -99,6 +99,19 @@ var surveyNames = survey.map((survey) => {
 });
 console.log(surveyNames);
 
+var persons = [
+    {firstname : "Malcom", lastname: "Reynolds"},
+    {firstname : "Kaylee", lastname: "Frye"},
+    {firstname : "Jayne", lastname: "Cobb"}
+  ];
+  function getFullName(item) {
+    return fullname = [item.firstname,item.lastname].join(" ");
+  }
+  
+  function myFunction() {
+    return join = persons.map(getFullName);
+  }
+console.log(myFunction());
 
 
 //find()
@@ -126,6 +139,33 @@ console.log(func7());
 survey.forEach((survey) => {
     console.log(survey.answer);
 })
+
+
+//includes()
+//returns true/false 
+var numbers = [1,2,3,4,5]
+var includesNumber = numbers.includes(7);
+console.log(includesNumber);
+
+
+//join()
+//concats two elements with the keyword
+var joinNumbers1 = numbers.join();
+var joinNumbers2 = numbers.join(' and ');
+console.log(joinNumbers1);
+console.log(joinNumbers2);
+
+
+//isArray()
+//check if it is array or not
+var checkArray = Array.isArray(numbers);
+console.log(checkArray);
+
+
+//indexOf()
+//returns the index of the array element
+var findIndex = numbers.indexOf(3);
+console.log(findIndex);
 
 
 //
