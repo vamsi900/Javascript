@@ -167,5 +167,91 @@ console.log(checkArray);
 var findIndex = numbers.indexOf(3);
 console.log(findIndex);
 
+//flat
+// const matrix = [[1,1], [1,[[[[[[1]]]]]]]];
+// const flatMatrix = matrix.flat(1);
+// console.log(flatMatrix);
 
-//
+//foreach()
+var children = [
+    {firstname : "Malcom", lastname: "Reynolds", year:1800},
+    {firstname : "Kaylee", lastname: "Frye", year:1995},
+    {firstname : "Jayne", lastname: "Cobb", year:1885},
+    {firstname: "vamsi", lastname:"reddy", year:1900},
+    {firstname: "abcd", lastname: "xyz", year:1998}
+  ];
+
+children.forEach(function(child){
+    console.log(child.firstname);
+});
+
+var ages = [12,34,23,16,56,42,35,11,78,1,54];
+//filter()
+var sortedAges = [];
+for(i=0; i<ages.length; i++){
+    if(ages[i]>=18){
+        sortedAges.push(ages[i]);
+    }
+};
+console.log(sortedAges);
+
+// var sortAges = ages.filter(function(age){
+//     if(age >= 21){
+//         return true;
+//     }
+// })
+
+var sortAges = ages.filter(age => age>=18);
+console.log(sortAges);
+
+var nineteenChildren = children.filter((child) => {
+    if(child.year >= 1900 && child.year<=1998){
+        return true;
+    }
+})
+console.log(nineteenChildren);
+
+nineteenChildren.forEach(function(nineteen){
+    console.log(nineteen.year);
+})
+
+var people=[
+    {name:'a', age:43, place:"hyderabad"},
+    {name:'b', age:20, place:"guntur"},
+    {name:'c', age:35, place:"khammam"},
+    {name:'d', age:18, place:"vizag"},
+    {name:'e', age:21, place:"kukatpally"},
+];
+
+var filterAge = people.filter(person => person.age>=30);
+// console.log(filterAge);
+
+var filterPlace = filterAge.filter(person => person.place == "hyderabad");
+// console.log(filterPlace);
+
+//returns a string
+filterPlace.forEach(function(people){
+    console.log(people.name);
+})
+
+//returns a string in an array
+var filterName = filterPlace.map((people) => {
+    return people.name;
+})
+console.log(filterName);
+
+
+var squares = [1,4,9,16,25,36,49,64,81,100,121];
+
+var sqrRoots = squares.map((square) => Math.sqrt(square));
+console.log(sqrRoots);
+
+
+//reduceRight()
+const test9 = ['i', 's', 'm', 'a', 'v'];
+let vamsi = test9.reduceRight((a, b) => a+b);
+console.log(vamsi);
+
+
+const str = "vamsi";
+console.log([...str]);
