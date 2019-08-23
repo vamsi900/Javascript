@@ -2,10 +2,14 @@
 // var obj1 = {
 //     name: 'vamsi',
 //     lname: 'reddy',
-//     id: 1234,
+//     id: {
+//         previous: 1234,
+//         present: 0987,
+//     },
 //     k1: "ascsds",
 //     k2: "aygjhas"
 // }
+// console.log(obj1.id.previous);
 // console.log(Object.keys(obj1));
 // console.log(Object.getOwnPropertyNames(obj1));//same as keys
 // console.log(Object.values(obj1));
