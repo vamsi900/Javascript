@@ -17,11 +17,11 @@
 // var entries = Object.entries(obj1);
 // console.log(entries[0][1]);
 
-var obj2 = { a: 10, b:20, c:10 };
-var obj3 = { b:15, c:20 };
-var obj4 = { c:30 }
-        var new_obj = Object.assign(obj2, obj3, obj4);
-        console.log(new_obj);
+// var obj2 = { a: 10, b:20, c:10 };
+// var obj3 = { b:15, c:20 };
+// var obj4 = { c:30 }
+//         var new_obj = Object.assign(obj2, obj3, obj4);
+//         console.log(new_obj);
 
 // var test1 = Object.keys(obj1);
 
@@ -34,6 +34,7 @@ var obj4 = { c:30 }
 
 
 // Object.defineProperty(obj1, "year", {value:"2008"});
+// console.log(obj1.year);
 
 // var obj2 = {
 //     name: ['vamsi'],
